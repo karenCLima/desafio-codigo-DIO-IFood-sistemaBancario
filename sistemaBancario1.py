@@ -40,8 +40,11 @@ while opcao != 4:
             else:
                 print("Não é possível realizar mais do que 3 saques por dia!")
     elif opcao == 3:
-        print(extrato)
-        print(f"Seu Saldo é de R$ {saldo:.2f}\n")
+        if extrato !="":
+            print(extrato)
+            print(f"Seu Saldo é de R$ {saldo:.2f}\n")
+        else:
+            print("Não foram realizadas movimentações. ")
     
     opcao = int(input("""Escolha uma opção: \n
               1 - Depositar\n
