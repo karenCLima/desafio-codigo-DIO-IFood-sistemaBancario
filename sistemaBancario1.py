@@ -41,6 +41,7 @@ while opcao != 4:
                 print("Não é possível realizar mais do que 3 saques por dia!")
     elif opcao == 3:
         if extrato !="":
+            print("########## EXTRATO #############")
             print(extrato)
             print(f"Seu Saldo é de R$ {saldo:.2f}\n")
         else:
