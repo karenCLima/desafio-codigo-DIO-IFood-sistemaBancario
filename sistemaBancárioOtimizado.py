@@ -32,9 +32,10 @@ def deposito(saldo, extrato,/):
         print("Erro na Operação.\n Não é possível depositor valores negativos!")
     return saldo, extrato
         
-def extrato(saldo,/,*,extrato):
+def mostrar_extrato(saldo,/,*,extrato):
     if extrato !="":
         print("########## EXTRATO #############")
+        print("")
         print(extrato)
         print(f"Seu Saldo é de R$ {saldo:.2f}\n")
     else:
@@ -104,7 +105,7 @@ while(True):
    elif opcao == 2:
        saldo, extrato = deposito(saldo,extrato)
    elif opcao == 3:
-       extrato(saldo, extrato=extrato)
+       mostrar_extrato(saldo, extrato=extrato)
    elif opcao == 4:
        lista_usuarios = criar_usuario(lista_usuarios)
    elif opcao == 5:
